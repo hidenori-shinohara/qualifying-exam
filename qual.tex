@@ -1,0 +1,104 @@
+\documentclass[12pt, psamsfonts]{amsart}
+
+%-------Packages---------
+\usepackage{amssymb,amsfonts}
+\usepackage{semantic}
+\usepackage{fullpage}
+\usepackage{tikz-cd}
+\usepackage{todonotes}
+\usepackage{physics}
+\usepackage[all,arc]{xy}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{mathrsfs}
+\usepackage{theoremref}
+\usepackage{graphicx}
+\usepackage[bookmarks]{hyperref}
+
+%--------Theorem Environments--------
+%theoremstyle{plain} --- default
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem{quest}[thm]{Question}
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{defns}[thm]{Definitions}
+\newtheorem{con}[thm]{Construction}
+\newtheorem{exmp}[thm]{Example}
+\newtheorem{exmps}[thm]{Examples}
+\newtheorem{notn}[thm]{Notation}
+\newtheorem{notns}[thm]{Notations}
+\newtheorem{addm}[thm]{Addendum}
+\newtheorem*{exer}{Exercise}
+
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Remark}
+\newtheorem{rems}[thm]{Remarks}
+\newtheorem{warn}[thm]{Warning}
+\newtheorem{sch}[thm]{Scholium}
+
+\DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator{\Id}{Id}
+\DeclareMathOperator{\End}{End}
+\DeclareMathOperator{\ord}{ord}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\Gal}{Gal}
+
+\makeatletter
+\let\c@equation\c@thm
+\makeatother
+\numberwithin{equation}{section}
+
+\bibliographystyle{plain}
+
+\begin{document}
+
+\title{Qualifying Exam Prep}
+\author{Hidenori Shinohara}
+\maketitle
+
+\begin{abstract}
+  In order to prepare for the qualifying exam, I decided to solve problems from Hatcher and Dummit and Foote.
+\end{abstract}
+
+\tableofcontents
+
+\section{Algebra}
+
+\subsection{Groups}
+The topics to cover: Elementary concepts (homomorphism, subgroup, coset, normal subgroup), solvable groups, commutator subgroup, Sylow theorems, structure of finitely generated Abelian groups.
+Symmetric, alternating, dihedral, and general linear groups.
+
+\subsection{Rings}
+The topics to cover: Commutative rings and ideals (principal, prime, maximal).
+Integral domains, Euclidean domains, principal ideal domains, polynomial rings, Eisenstein's irreducibility criterion, Chinese remainder theorem.
+Structure of finitely generated modules over a principal ideal domain.
+
+\subsection{Fields Extensions}
+Finite, algebraic, separable, inseparable, transcendental, splitting field of a polynomial, primitive element theorem, algebraic closure.
+Finite fields.
+
+\subsection{Galois Theory}
+Finite Galois extensions and the Galois correspondence between subgroups of the Galois group and sub-extensions.
+Solvable extensions and solving equations by radicals.
+
+\section{Algebraic topology}
+
+\subsection{Fundamental group}
+Computation of the fundamental group, van Kampen's theorem, covering spaces.
+
+\subsection{Homology}
+Singular chains, chain complexes, homotopy invariance.
+Relationship between the first homology and the fundamental group, relative homology.
+The long exact sequence of relative homology.
+The Mayer-Vietoris sequence.
+
+
+
+\end{document}
+
+
