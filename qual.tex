@@ -78,6 +78,30 @@ The topics to cover: Commutative rings and ideals (principal, prime, maximal).
 Integral domains, Euclidean domains, principal ideal domains, polynomial rings, Eisenstein's irreducibility criterion, Chinese remainder theorem.
 Structure of finitely generated modules over a principal ideal domain.
 
+\subsubsection{Chinese remainder theorem}
+
+\begin{exer}{(Problem 1, Section 7.6)}
+  Let $R$ be a ring with identity $1 \ne 0$.
+  An element $e \in R$ is called an idempotent if $e^2 = e$.
+  Assume $e$ is an idempotent in $R$ and $er = re$ for all $r \in R$.
+  Prove that $Re$ and $R(1 - e)$ are two-sided ideals of $R$ and that $R \cong Re \times R(1 - e)$.
+  Show that $e$ and $1 - e$ are identities for the subrings $Re$ and $R(1 - e)$ respectively.
+\end{exer}
+
+\begin{proof}
+  $Re$ is clearly nonempty and $re + r'e = (r + r')e \in Re$ for all $re, r'e \in Re$.
+  For all $r' \in R$ and $re \in Re$, $r'(re) = (r'r)e \in Re$ and $(re)r' = r(er') = r(r'e) = (rr')e \in Re$.
+  Thus $Re$ is a two-sided ideal of $R$.
+  $(1 - e)^2 = 1 - e - e + e^2 = 1 - e$, and, for every $r \in R$, $r(1 - e) = r - re = r - er = (1 - e)r$.
+  Thus $R(1 - e)$ is a two-sided ideal of $R$.
+  Finally, $\phi: R \rightarrow R / Re \times R / R(1 - e)$ defined by $x \mapsto (x + Re, x + R(1 - e))$ is a ring homomorphism with $\ker(\phi) = Re \cap R(1 - e)$ by the Chinese Remainder Theorem.
+  Let $r(1 - e) \in \ker(\phi) = Re \cap R(1 - e)$.
+  Then $r(1 - e)e = r(1 - e)$ since $r(1 - e) \in Re$.
+  However, this implies $r(1 - e)e = r(e - e^2) = r0 = 0$.
+  Thus $\ker(\phi) = 0$, so $R \cong R / Re \times R / R(1 - e)$.
+\end{proof}
+
+
 \subsection{Fields Extensions}
 Finite, algebraic, separable, inseparable, transcendental, splitting field of a polynomial, primitive element theorem, algebraic closure.
 Finite fields.
