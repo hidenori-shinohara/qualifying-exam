@@ -115,6 +115,23 @@ Solvable extensions and solving equations by radicals.
 \subsection{Fundamental group}
 Computation of the fundamental group, van Kampen's theorem, covering spaces.
 
+\begin{exer}{(Exercise 8, Section 1.1)}
+  Does the Borsuk-Ulam theorem hold for the torus?
+\end{exer}
+
+\begin{proof}
+  No.
+  Consider the natural projection map of $S^1 \times S^1$ into $\mathbb{R}^2$.
+  \begin{figure}[!htb]
+    \includegraphics[width=.5\linewidth]{img/hatcher/ex-1-1-8.jpeg}
+      \caption{Ex 1-1-8}
+    \label{fig:ex_1_1_8}
+  \end{figure}
+  From Figure \ref{fig:ex_1_1_8}, it is clear that $f(x, y) = -f(-x, -y)$.
+  However, $f(x, y) \ne 0$ for any $(x, y) \in S^1 \times S^1$.
+  Thus $f(x, y) \ne f(-x, -y)$ for all $(x, y)$.
+\end{proof}
+
 \subsection{Homology}
 Singular chains, chain complexes, homotopy invariance.
 Relationship between the first homology and the fundamental group, relative homology.
