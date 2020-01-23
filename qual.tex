@@ -110,6 +110,21 @@ Finite fields.
 Finite Galois extensions and the Galois correspondence between subgroups of the Galois group and sub-extensions.
 Solvable extensions and solving equations by radicals.
 
+\begin{exer}{(Exercise 4 (Chapter 14))}
+  Prove that $\mathbb{Q}(\sqrt{2})$ and $\mathbb{Q}(\sqrt{3})$ are not isomorphic.
+\end{exer}
+
+\begin{proof}
+  Suppose they are and let $\phi$ be a ring isomorphism.
+  $\phi(\sqrt{2}) = a + b\sqrt{3}$ for some $a, b \in \mathbb{Q}$.
+  This implies $\phi(2) = (a^2 + 3b^2) + 2ab\sqrt{3}$.
+  On the other hand, $\phi(2) = \phi(1) + \phi(1) = 1 + 1 = 2$.
+  Thus $2ab = 0$.
+  If $a = 0$, then $3b^2 = 2$, but $\sqrt{2}/3$ is not rational.
+  If $b = 0$, then $a^2 = 2$, but $\sqrt{2}$ is not rational.
+  This is a contradiction, so such a homomorphism does not exist.
+\end{proof}
+
 \section{Algebraic topology}
 
 \subsection{Fundamental group}
