@@ -147,6 +147,34 @@ Computation of the fundamental group, van Kampen's theorem, covering spaces.
   Thus $f(x, y) \ne f(-x, -y)$ for all $(x, y)$.
 \end{proof}
 
+\begin{exer}{(Exercise 2, Section 1.2)}
+  Let $X \subset \mathbb{R}^m$ be the union of convex open sets $X_1, \cdots, X_n$ such that $X_i \cap X_j \cap X_k \ne \emptyset$ for all $i, j, k$.
+  Show that $X$ is simply-connected.
+\end{exer}
+
+\begin{proof}
+  The case that $n = 1$ is trivial.
+  Suppose we have shown this for $n \in \mathbb{N}$ and let $X_1, \cdots, X_{n + 1}$ be a set of convex open sets such that the intersection of any three is nonempty.
+  Let $Y = X_1 \cup \cdots \cup X_n$.
+  By the inductive hypothesis, $Y$ is simply connected.
+  We have
+  \begin{itemize}
+    \item
+      $Y, X_{n + 1}$ are both path-connected open sets such that the intersection is nonempty.
+    \item
+      We claim that $Y \cap X_{n + 1}$ is path connected.
+      Let $a, b \in Y \cap X_{n + 1}$.
+      Then $a \in X_i \cap X_{n + 1}$ and $b \in X_j \cap X_{n + 1}$ for some $i, j \in \{ 1, \cdots, n \}$.
+      Then $X_i \cap X_j \cap X_{n + 1}$ is nonempty, and choose a point $y$ in the intersection.
+      Then $a$ and $y$ can be joined by a path because $X_i \cap X_{n + 1}$ is convex.
+      Similarly, $b$ and $y$ can be joined by a path.
+      Therefore, $a$ and $b$ can be joined by a path, so $Y \cap X_{n + 1}$ is path connected.
+  \end{itemize}
+  By the van Kampen theorem, $\pi_1(X) \cong \pi_1(Y) * \pi_1(X_{n + 1}) / N$ for some normal subgroup $N$.
+  However, it does not matter what $N$ is because $\pi_1(Y)$ and $\pi_1(X_{n + 1})$ are both trivial.
+  Thus $\pi_1(X) = 1$.
+\end{proof}
+
 \subsection{Homology}
 Singular chains, chain complexes, homotopy invariance.
 Relationship between the first homology and the fundamental group, relative homology.
