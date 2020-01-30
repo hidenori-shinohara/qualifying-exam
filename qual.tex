@@ -73,6 +73,26 @@
 The topics to cover: Elementary concepts (homomorphism, subgroup, coset, normal subgroup), solvable groups, commutator subgroup, Sylow theorems, structure of finitely generated Abelian groups.
 Symmetric, alternating, dihedral, and general linear groups.
 
+\subsubsection{Structure of finitely generated Abelian groups}
+
+\begin{exer}{(Problem 5, Section 5.2)}
+  Let $G$ be a finite abelian group of type $(n_1, n_2, \cdots, n_t)$.
+  Prove that $G$ contains an element of order $m$ if and only if $m \mid n_1$.
+  Deduce that $G$ is of exponent $n_1$.
+\end{exer}
+
+\begin{proof}
+  Let $\phi:G \rightarrow \mathbb{Z}^{n_1} \oplus \cdots \oplus \mathbb{Z}^{n_t}$ be an isomorphism.
+  Let $x \in G$ and $m$ be the order of $x$.
+  Let $\phi(x) = (a_1, \cdots, a_t)$.
+  Then $\phi(n_1x) = (n_1a_1, \cdots, n_1a_t) = 0$ because $n_i \mid n_1$ for each $i$.
+  Thus $m \mid n_1$.
+
+  On the other hand, if $m \mid n_1$, then $\phi^{-1}(n_1 / m, 0, \cdots, 0)$ is an element of order $m$ in $G$.
+
+  Therefore, every element's order is a divisor of $n_1$ and there exists an element of order $n_1$, so $G$ is of exponent $n_1$.
+\end{proof}
+
 \subsection{Rings}
 The topics to cover: Commutative rings and ideals (principal, prime, maximal).
 Integral domains, Euclidean domains, principal ideal domains, polynomial rings, Eisenstein's irreducibility criterion, Chinese remainder theorem.
