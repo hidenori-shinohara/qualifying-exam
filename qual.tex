@@ -95,7 +95,7 @@ Symmetric, alternating, dihedral, and general linear groups.
 
 \subsection{Rings}
 The topics to cover: Commutative rings and ideals (principal, prime, maximal).
-Integral domains, Euclidean domains, principal ideal domains, polynomial rings, Eisenstein's irreducibility criterion, Chinese remainder theorem.
+Integral domains, principal ideal domains, polynomial rings, Eisenstein's irreducibility criterion.
 Structure of finitely generated modules over a principal ideal domain.
 
 \subsubsection{Chinese remainder theorem}
@@ -119,6 +119,23 @@ Structure of finitely generated modules over a principal ideal domain.
   Then $r(1 - e)e = r(1 - e)$ since $r(1 - e) \in Re$.
   However, this implies $r(1 - e)e = r(e - e^2) = r0 = 0$.
   Thus $\ker(\phi) = 0$, so $R \cong R / Re \times R / R(1 - e)$.
+\end{proof}
+
+\subsubsection{Euclidean domains}
+
+\begin{exer}{(Exercise 3, Section 8.1)}
+  Let $R$ be a Euclidean domain.
+  Let $m$ be the minimum integer in the set of norms of nonzero elements of $R$.
+  Prove that every nonzero element of $R$ of norm $m$ is a unit.
+  Deduce that a nonzero element of norm zero (if such an element exists) is a unit.
+\end{exer}
+
+\begin{proof}
+  Let $x$ be an element of norm $m$.
+  Since $R$ is a Euclidean domain, $1 = ax + b$ for some $a, b \in R$ with $b = 0$ or $N(b) < N(m)$.
+  Since $N(x) = m$, $b = 0$.
+  Thus $a$ is the multiplicative inverse of $x$, so $x$ is a unit.
+  Since the norm has to be nonnegative, the last part of the problem is trivial.
 \end{proof}
 
 
